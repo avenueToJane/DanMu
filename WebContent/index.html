@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--要求页面自动适应浏览器的屏幕-->
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+	 minimum-scale=1.0, user-scalable=ye" />
+<!--声明我要使用bootstrap-->
+<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>文字弹幕</title>
+<link href="iconfont/style.css" type="text/css" rel="stylesheet">
+<script src='js/wilddog.js'></script>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/buttons.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<script src="js/danmu.js"></script>
+<link rel="stylesheet" href="css/barrage.css" />
+<link rel="stylesheet" href="css/buttons.css" />
+<style type=text/css>
+.inputarea {
+	background-color: #44c767
+}
+</style>
+</head>
+
+<div id="showWords"
+	style="background: url('images/bg.jpg'); background-size: 100%;">
+
+</div>
+
+<div id="actions" style="height: 100%; width: 100%; margin-top: 0px"
+	align="center">
+	<input id="word" class="inputarea " placeholder="请输入你想说的话" type="text" />
+	<select style="background-color: #bce8f1" id="wordSize">
+		<option value="20px">请选择字体大小</option>
+		<option value="10px">小字体</option>
+		<option value="30px">中字体</option>
+		<option value="50px">大字体</option>
+	</select> <a href="javaScript:void (0);"
+		class="button button-raised button-primary button-pill" id="addWords">发送弹幕</a>
+	<a href="javaScript:void (0);"
+		class="button button-raised button-primary button-pill" id="removeAll">关闭弹幕</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body{
+    font-size: 1em;
+	overflow:hidden;
+}
+
+/*设置显示面板*/
+#showWords{
+    width: 100%;
+    border: 1px solid #ccc;
+     height: 35em;
+   position: relative;
+
+}
+
+/*设置输入框*/
+#word{
+    display: block;
+    width: 40%;
+    height: 2em;
+    margin: 1.2em auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.2em 0.5em;
+    font-size: 1.1em;
+}
+
+#actions{
+    text-align: center;
+}
+
+/*设置按钮*/
+#actions button{
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    text-shadow: 0px 1px 0px #2f6627;
+    -webkit-box-shadow: 1px 1px 3px 0px #666666;
+    -moz-box-shadow: 1px 1px 3px 0px #666666;
+    box-shadow: 1px 1px 3px 0px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    background: #44c767;
+    padding: 12px 30px 12px 30px;
+    border: solid #18ab29 1px;
+    text-decoration: none;
+}
+
+#actions button:hover{
+    color: #ffffff;
+    background: #5cbf2a;
+    text-decoration: none;
+}
+
+.moveWord{
+    font-size: 1.1em;
+    position: absolute;
+}

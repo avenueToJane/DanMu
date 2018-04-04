@@ -63,18 +63,18 @@
 			<compilerarg line="-Xlint:unchecked" />
 			
 		</javac> -->
-		<copy todir="${build.dir}">
+		<!--	<copy todir="${build.dir}">
 			<fileset dir="${src.dir}">
 				<include name="**/*.xml" />
 				<include name="**/*.properties" />
 				<include name="**/*.sql" />
 			</fileset>
-			<!-- <fileset dir="${config.dir}">
+			<fileset dir="${config.dir}">
 				<include name="**/*.xml" />
 				<include name="**/*.properties" />
 				<include name="**/*.sql" />
-			</fileset>-->
-		</copy>
+			</fileset>
+		</copy>-->
 		<echo message="end compile..." />
 	</target>
 

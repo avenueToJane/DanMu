@@ -9,15 +9,12 @@
 	<property name="webRoot.dir" value="${basedir}/WebContent" />
 	<property name="src.dir" value="${basedir}/src" />
 	<!-- <property name="config.dir" value="${basedir}/config" />-->
-	<property name="lib.dir" value="${webRoot.dir}/WEB-INF/lib" />
+	<!-- <property name="lib.dir" value="${webRoot.dir}/WEB-INF/lib" />-->
 	<property name="build.dir" value="${basedir}/build" />
 
 	<!-- 初始化classpath -->
 	<path id="project.classpath">
-		<fileset dir="${lib.dir}">
-			<include name="**/*.jar" />
-		</fileset>
-		<!-- 添加tomcat类路径 -->
+		
 		<fileset dir="${catalina.home}/lib">
 			<include name="*.jar" />
 		</fileset>
@@ -97,7 +94,7 @@
 		<echo message="begin war..." />
 		<war destfile="${basedir}/${webapp.name}.war" basedir="${webRoot.dir}" 
 			webxml="${webRoot.dir}/WEB-INF/web.xml">
-			<lib dir="${lib.dir}" />
+			<!--<lib dir="${lib.dir}" /> -->
 			<classes dir="${build.dir}/classes" />
 			<fileset dir="${webRoot.dir}">
 				<include name="***.*" />

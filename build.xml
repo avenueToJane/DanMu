@@ -55,14 +55,14 @@
 	<!-- 编译java -->
 	<target name="compile" depends="init" description="编译java文件">
 		<echo message="begin compile..." />
-		<javac srcdir="${src.dir}" destdir="${build.dir}/classes" 
+		<!-- <javac srcdir="${src.dir}" destdir="${build.dir}/classes" 
 			includeantruntime="false" nowarn="on" 
 			source="1.6" target="1.6" deprecation="true" debug="true" 
 			encoding="UTF-8" classpathref="project.classpath" 
 			>
 			<compilerarg line="-Xlint:unchecked" />
-			<!-- <classpath refid="project.classpath" /> -->
-		</javac>
+			
+		</javac> -->
 		<copy todir="${build.dir}">
 			<fileset dir="${src.dir}">
 				<include name="**/*.xml" />
